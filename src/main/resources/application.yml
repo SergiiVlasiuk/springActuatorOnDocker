@@ -1,0 +1,22 @@
+# Standalone configuration part for self-contained runnable WAR-file
+server:
+  # This property should match POMs "finalName".
+  # As long as on target server we deploy application as WAR bundle,
+  # application's context path has value of WAR's name.
+#  context-path: /demo
+  port: 8083
+
+#endpoints:
+#  info:
+#    enabled: true
+#
+management:
+  security:
+    enabled: false
+#  health:
+#    defaults:
+#      enabled: true
+#  port: 8085
+#  address: 127.0.0.1
+#  context-path: /manage
+
